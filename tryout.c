@@ -1,3 +1,22 @@
+/*
+    DAYS OVERDUE                CHARGES PER DAY
+    Upto 7 days                  Ksh. 20 
+    8 to 14 days                 Ksh. 50
+    15 days or more              Ksh. 100
+
+
+    Required varriables :
+                        1) BookID
+                        2) Duedate
+                        3) returndate
+
+    FUnctions 
+            - Overdue days
+            - Fine calculations
+            - printing user inputs and the  outout    
+
+*/
+
 #include <stdio.h>
 
 // Function declarations
@@ -33,11 +52,11 @@ int inputs() {
     fgets(BookID, sizeof(BookID), stdin);
 
     // Take due date
-    printf("Enter the due date (dd mm yyyy): \n");
+    printf("Enter the due date (dd/mm/yyyy): \n");
     scanf("%d %d %d", &duedate, &duemonth, &dueyear);
 
     // Take return date
-    printf("Enter the return date (dd mm yyyy): \n");
+    printf("Enter the return date (dd/mm/yyyy): \n");
     scanf("%d %d %d", &returndate, &returnmonth, &returnyear);
 
     // Print the input data
